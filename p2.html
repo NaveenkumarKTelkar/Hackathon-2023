@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two sum</title>
+</head>
+<body>
+    <center>
+        <h1>Two Sum</h1>
+    </center>
+    <hr>
+
+    <h3 id="target-i"></h3>
+    <h3 id="target-j"></h3>
+
+    <script>
+        let arr=[2,7,11,15];
+        let target = 9;
+
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr.length; j++) {
+                if (arr[i] + arr[j]== target) {
+                    document.getElementById('target-i').innerHTML =i;
+                    document.getElementById('target-j').innerHTML =j;
+                    console.log(i,j);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

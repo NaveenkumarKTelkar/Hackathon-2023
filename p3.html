@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duplicates</title>
+</head>
+<body>
+    <center>
+        <h1>Remove Duplicates from Sorted Array</h1>
+    </center>
+    <hr>
+
+    <script>
+        let nums = [1,1,2];
+        let arr = [ ];
+        for (let i = 0; i < nums.length; i++) {
+            if (arr.indexOf(nums[i])=== -1) {
+                arr.push(nums[i]);
+            } 
+        }
+        console.log(arr);
+    </script>
+</body>
+</html>

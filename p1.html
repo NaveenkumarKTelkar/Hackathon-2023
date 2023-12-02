@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon</title>
+</head>
+<body>
+    <center>
+        <h1>Find the missing Number</h1>
+    </center>
+    <hr>
+
+    <p id="miss"></p>
+    <script>
+        function missingNumber(a,nums) {
+            let total = Math.floor((nums+1)*(nums+2)/2);
+            for (let i = 0; i < nums; i++) 
+                total -=a[i]; 
+                return total;
+            }
+            
+            let arr = [1,2,4,5];
+            let n = arr.length;
+            let missing = missingNumber(arr,n);
+
+            document.getElementById('miss').innerHTML = missing;
+        
+    </script>
+</body>
+</html>
